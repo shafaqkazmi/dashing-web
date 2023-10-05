@@ -1,0 +1,37 @@
+$myColor: #23242b;
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputContainer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.formLabel{
+    margin-bottom: 10px;
+}
+
+.formInput{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid $myColor;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btnContainer{
+    margin-top: 20px;
+}
+
+.submitBtn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: $myColor;
+    color: white;
+}

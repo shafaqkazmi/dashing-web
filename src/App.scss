@@ -1,0 +1,46 @@
+$bgColor: #23242b;
+
+body {
+  background-color: $bgColor;
+
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.table_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Onest", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

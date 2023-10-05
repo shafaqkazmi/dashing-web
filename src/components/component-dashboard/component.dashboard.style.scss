@@ -1,0 +1,137 @@
+.container {
+  width: 280px;
+  height: 400px;
+}
+
+.searchContainer {
+  width: 100%;
+}
+
+.buttonsContainer {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tableBtn {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout {
+  background-color: salmon;
+  color: white;
+}
+
+.add {
+  background-color: blues;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.tableContainer {
+  max-height: 90%;
+  overflow-y: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border: 1px solid rgb(214, 214, 214);
+  background-color: white;
+  padding: 10px;
+}
+table thead {
+  border-bottom: 2px solid black;
+}
+
+thead th {
+  text-align: left;
+  border-bottom: 2px solid black;
+  width: 20%;
+  border: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: inherit;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+tbody {
+  overflow-y: scroll;
+}
+
+tbody tr {
+  // vertical-align: baseline;
+  height: 10px !important;
+}
+
+tbody td {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+  background-color: #eee;
+}
+
+// Media Queries
+
+@media only screen and (min-width: 480px) {
+  .container {
+    width: 400px;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 600px;
+    height: 600px;
+  }
+
+  .btnsAndSearch {
+    display: flex;
+  }
+
+  .buttonsContainer {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .tableBtn {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 768px;
+    height: 700px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1024px;
+    height: 800px;
+  }
+
+  .tableContainer {
+    max-height: 80%;
+  }
+}
